@@ -1,0 +1,74 @@
+/*样式初始化*/
+html {
+	background: #ffffff;
+	color: #676767;
+	height: 100%;
+}
+body{
+	min-height: 100%;
+	height: 100%;
+}
+body,div,p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+}
+body {
+	font-size: 14px;
+	font-family: PingFangSC-Regular, 'Microsoft Yahei', 'SimSun', '宋体', 'Arial Narrow';
+}
+/*text-decoration：添加到文本的修；none：定义标准的文本*/
+a {
+	text-decoration: none;
+}
+/*未访问的*/
+a:link {
+	color: #009;
+}
+/*已访问的*/
+a:visited {
+	color: #800080;
+}
+/*hover：鼠标移动到链接上；active：选定的链接；focus：向拥有键盘输入焦点的元素添加样式*/
+a:hover,
+a:active,
+a:focus {
+	text-decoration: none;
+}
+button:focus {
+	outline: 0;
+}
+
+/*清除浮动*/
+.clearfix:after {
+	content: '';
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+
+
+/*  */
+.container{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	background: url('../img/bg.jpeg') 100% 100% no-repeat;
+	background-size: 100% 100%;
+	min-height: 100%;
+}
+.top_img{
+	width: 80px;
+	height: 80px;
+	padding-top: 15px;
+}
+.download{
+	display: block;
+}
+.download img{
+	width: 200px;
+	margin: 10px 0;
+}
