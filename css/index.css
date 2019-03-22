@@ -55,20 +55,31 @@ button:focus {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	align-items: center;
-	background: url('../img/bg.jpg') 100% 100% no-repeat;
+	/*align-items: center;*/
+	background: url('../img/bg.png') 100% 100% no-repeat;
 	background-size: 100% 100%;
 	min-height: 100%;
 }
+.top{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: flex-start;*/
+	align-items: center;
+	margin-top: 10px;
+	margin-left: 10px;
+}
 .top_img{
-	width: 70px;
-	height: 70px;
-	padding-top: 12px;
+	width: 50px;
+	height: 50px;
+	padding-top: 0px;
+	padding-left: 0px;
+
 }
 .download{
 	display: block;
+	text-align: center;
 }
 .download img{
 	width: 200px;
-	margin: 10px 0;
+	margin: 22px 0 0 0;
 }
