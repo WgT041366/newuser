@@ -74,22 +74,10 @@ button:focus {
 	/*margin-left: 15px;
 	margin-right: 15px;*/
 	background: #ffffff;
-	margin-top: 15px;
+	margin-top: 10px;
 	margin-left: 15px;
 	margin-right: 15px;
-	border-radius: 25px;
-}
-.fans_red{
-	display: block;
-	font-size:18px;
-	color: #fff;
-	text-align: center;
-	background: url('../img/fans_red.png') 100% 100% no-repeat ;
-
-	/*border-radius: 24px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 5%;*/
+	border-radius: 20px;
 }
 
 .top{
