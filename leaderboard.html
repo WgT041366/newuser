@@ -92,7 +92,7 @@
         }
         .row_right{
         	margin-right: 15%;
-            color: #969696;
+            color: #e8290f;
         }
 
         .img_title{
@@ -109,16 +109,16 @@
         <img class="img_title" src="./img/leaderboard_title.png">
         <ul id="myTab" class="nav nav-tabs">
             <li class="active">
-                <a href="#home" data-toggle="tab">能量</a>
+                <a href="#home" data-toggle="tab">今日收益</a>
             </li>
             <li>
-                <a href="#ios" data-toggle="tab">粉丝</a>
+                <a href="#ios" data-toggle="tab">本月收益</a>
             </li>
         </ul>
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade in active" id="home">
-                <!-- 能量循环列表 -->
-               <div class="rows" v-for='(v,index) in energy_list'>
+                <!-- 今日收益列表 -->
+               <div class="rows" v-for='(v,index) in daymoney_list'>
                    <div class="row_left">
 
 						<div v-if='index == 0' class="row_left_order first">{{index + 1}}</div>
@@ -136,7 +136,7 @@
             </div>
             <div class="tab-pane fade" id="ios">
                 <!-- 粉丝循环列表 -->
-                <div class="rows" v-for='(v,index) in fans_list'>
+                <div class="rows" v-for='(v,index) in monthmoney_list'>
                    <div class="row_left">
                        <div v-if='index == 0' class="row_left_order first">{{index + 1}}</div>
 						<div v-else-if='index == 1' class="row_left_order second">{{index + 1}}</div>
@@ -158,116 +158,119 @@
     <script src="https://cdn.bootcss.com/vue/2.5.8/vue.min.js"></script>
     <script type="text/javascript">
         var data = {
-            // 能量的数据
-            energy_list:[
+            
+            // 今日收益数据
+            daymoney_list:[
                 {
                     'img':'./img/icon.png',
                     'name':'小仙女',
-                    'num':'13568.16'
+                    'num':'¥671.36'
                 },
                 {
                     'img':'./img/icon.png',
                     'name':'九点零度',
-                    'num':'10738.32'
+                    'num':'¥506.7'
                 },
                 {
                     'img':'./img/icon.png',
                     'name':'zara',
-                    'num':'4461.41'
-                },
-
-                {
-                    'img':'./img/icon.png',
-                    'name':' 安心',
-                    'num':'2557.02'
-                },
-                {
-                    'img':'./img/icon.png',
-                    'name':'SUNSHINE',
-                    'num':'2154.52'
-                },
- 				{
-                    'img':'./img/icon.png',
-                    'name':'今晚我得回家',
-                    'num':'1921.71'
-                },
-                {
-                    'img':'./img/icon.png',
-                    'name':'爱吃萝卜的猪',
-                    'num':'1815.06'
-                },
-               
-                {
-                    'img':'./img/icon.png',
-                    'name':'心惜',
-                    'num':'1666.19'
-                },
-                {
-                    'img':'./img/icon.png',
-                    'name':'芬……',
-                    'num':'1468.66'
-                },
-
-                {
-                    'img':'./img/icon.png',
-                    'name':'Music Kจุ๊บ',
-                    'num':'1274.41'
-                },
-
-            ],
-            // 粉丝的数据
-            fans_list:[
-                {
-                    'img':'./img/icon.png',
-                    'name':'小仙女',
-                    'num':'1012'
-                },
-                {
-                    'img':'./img/icon.png',
-                    'name':'九点零度',
-                    'num':'684'
-                },
-                {
-                    'img':'./img/icon.png',
-                    'name':'zara',
-                    'num':'382'
+                    'num':'¥381.14'
                 },
                 {
                     'img':'./img/icon.png',
                     'name':'今晚我得回家',
-                    'num':'322'
+                    'num':'¥322.6'
                 },
                 {
                     'img':'./img/icon.png',
-                    'name':'童童',
-                    'num':'237'
+                    'name':'社长 ²⁰¹⁹',
+                    'num':'¥268.23'
                 },
                 {
                     'img':'./img/icon.png',
-                    'name':'心惜',
-                    'num':'231'
+                    'name':'牛放南山下',
+                    'num':'¥256.2'
                 },
                 {
                     'img':'./img/icon.png',
-                    'name':' 安心',
-                    'num':'173'
-                },
-                 {
-                    'img':'./img/icon.png',
-                    'name':'爱你一万年',
-                    'num':'162'
-                },
-                {
-                    'img':'./img/icon.png',
-                    'name':'M.Plutusblesslv',
-                    'num':'158'
+                    'name':'爱是^O^不惑',
+                    'num':'¥231.83'
                 },
                 
                 {
                     'img':'./img/icon.png',
-                    'name':'Music Kจุ๊บ',
-                    'num':'107'
-                },   
+                    'name':'爱你一万年',
+                    'num':'¥162.87'
+                },
+                {
+                    'img':'./img/icon.png',
+                    'name':'黑黑',
+                    'num':'¥158.72'
+                },
+                {
+                    'img':'./img/icon.png',
+                    'name':'667788',
+                    'num':'¥106.2'
+                }, 
+                   
+            ],
+            // 本月收益的数据
+            monthmoney_list:[
+                {
+                    'img':'./img/icon.png',
+                    'name':'小仙女',
+                    'num':'¥13568.16'
+                },
+                {
+                    'img':'./img/icon.png',
+                    'name':'九点零度',
+                    'num':'¥10738.32'
+                },
+                {
+                    'img':'./img/icon.png',
+                    'name':'zara',
+                    'num':'¥5961.41'
+                },
+                {
+                    'img':'./img/icon.png',
+                    'name':'今晚我得回家',
+                    'num':'¥4921.71'
+                },
+
+                {
+                    'img':'./img/icon.png',
+                    'name':'社长 ²⁰¹⁹',
+                    'num':'¥4557.02'
+                },
+                {
+                    'img':'./img/icon.png',
+                    'name':'牛放南山下',
+                    'num':'¥4154.52'
+                },
+ 				
+                {
+                    'img':'./img/icon.png',
+                    'name':'爱是^O^不惑',
+                    'num':'¥3815.06'
+                },
+               
+                {
+                    'img':'./img/icon.png',
+                    'name':'爱你一万年',
+                    'num':'¥3666.19'
+                },
+                {
+                    'img':'./img/icon.png',
+                    'name':'667788',
+                    'num':'¥3168.66'
+                },
+
+                {
+                    'img':'./img/icon.png',
+                    'name':'黑黑',
+                    'num':'¥2974.41'
+                },
+
             ]
         }
 
